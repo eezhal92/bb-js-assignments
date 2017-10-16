@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+.faq {
+  cursor: pointer;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #e8e8e8;
+}
+
+.faq-header, .faq-body {
+  padding: 10px;
+}
+
+.faq-header {
+  background: #e4edf1;
+
+}
+
+.faq-body {
+  display: none;
+  height: 0px;
+  padding: 0px 10px;
+}
+
+.faq--open {
+  border-color: #5493d1;
+}
+
+.faq--open .faq-body {
+  display: block;
+  height: inherit;
+  padding: 10px;
+}

@@ -1,0 +1,60 @@
+.ne-slider {
+  position: relative;
+  display: block;
+}
+
+.ne-slider::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.ne-slider img {
+  display: inline-block;
+  float: left;
+}
+
+.ne-slider .ne-slide-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ne-slider .ne-slide-track {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
+    width: 4488px;
+}
+
+.ne-slider .ne-slide {
+  display: block;
+  float: left;
+}
+
+.ne-nav-prev, .ne-nav-next {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.ne-nav-prev {
+  left: -60px;
+}
+
+.ne-nav-prev::before {
+  content: '←';
+}
+
+.ne-nav-next {
+  right: -60px;
+}
+
+.ne-nav-next::after {
+  content: '→';
+}

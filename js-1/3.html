@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess Board</title>
+</head>
+<body>
+  <h1>Table of contents</h1>
+  <ul>
+    <li><a href="1.html">Triangle Line</a></li>
+    <li><a href="2.html">Fizz Buzz</a></li>
+    <li><a href="3.html">Chess Board</a></li>
+  </ul>
+  <script type="text/javascript">
+    var size = 8;
+
+    var board = '';
+
+    for (var y = 0; y < size; y++) {
+      for (var x = 0; x < size; x++) {
+        if ((x + y) % 2 === 0) {
+          board += ' ';
+        } else {
+          board += '#';
+        }
+      }
+      board += "\n";
+    }
+
+    console.log(board);
+  </script>
+</body>
+</html>

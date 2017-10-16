@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fizz Buzz</title>
+</head>
+<body>
+  <h1>Table of contents</h1>
+  <ul>
+    <li><a href="1.html">Triangle Line</a></li>
+    <li><a href="2.html">Fizz Buzz</a></li>
+    <li><a href="3.html">Chess Board</a></li>
+  </ul>
+  <script>
+    for (var n = 1; n < 100; n++) {
+      var output = '';
+
+      if (n % 3 === 0)
+        output += 'Fizz';
+      else if (n % 5 === 0)
+        output += 'Buzz';
+
+      console.log(output || n);
+    }
+  </script>
+</body>
+</html>
